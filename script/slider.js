@@ -3,7 +3,7 @@
     // slider configuration goes here
     var imgObj = {
         // path of image folder, currently it is at /static/image/
-        "PATH": "/static/image/",
+        "PATH": "static/image/",
 
         // names of image files, just add the name of images here and slider will show image with bullet point
         "images": [
@@ -22,6 +22,7 @@
 
     // main slider Object
     var sliderObj = function () {
+        var self = this;
         // active element
         this._active = 0;
 
@@ -78,7 +79,7 @@
             // attach click event to bullets
             var changeTo = this.changedTo;
             this.bulletChild[index].addEventListener('click', function (event) {
-                changeTo.call(this, event, index);
+                changeTo.call(self, event, index);
             });
 
             // setting bullet child id, irrelevant
