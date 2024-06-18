@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <title>EQ Offices | Options</title>
+    <link rel='shortcut icon' type='image/x-icon' href='/static/fav.ico' />
+    <link rel="shortcut icon" type="image/png" href="/static/fav.png"/>
+    <link rel="stylesheet" href="/styles/skeleton.css">
+    <link rel="stylesheet" href="/styles/app.min.css?v=1.1">
+    <link rel="stylesheet" href="/styles/font-awesome/css/font-awesome.min.css">
+    <base href="/">
+</head>
+
+<body style="padding-bottom: 15rem;">
+    
+    <!-- Start of Header Section - Common to all pages -->
+    
+    <div class="top-bar">
+        <nav class="nav-bar">
+            <div class="nav-menu container">
+                <!-- Change links on top of page here  -->            
+                <div class="nav-item"><a href="">Home</a></div>
+                <div class="nav-item"><a href="/options/">Options</a></div>
+                <div class="nav-item"><a href="/gallery/">Gallery</a></div>
+                <div class="nav-item"><a href="/contact/">Contact</a></div>
+            </div>
+        </nav>
+        <header class="info-bar">
+            <div class="container info-bar-content">
+                <!-- Change logo image here -->
+                <img src="/static/image/logo.png" class="u-pull-left" alt="logo">
+                <div class="enquiry u-pull-right">
+                    <div>
+                        <!-- Change contact number inside href="tel:" as well as inside <a> > tag -->
+                        <a href="tel:(416) 583-1427">(416) 583-1427</a>
+                    </div>
+                    <div>
+                        <!-- Change email inside href="mailto:" as well as inside <a> tag -->
+                        <a href="mailto:'info@eqoffices.com'">                       
+                            info@eqoffices.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- End of Header Section - Common to all pages -->
+
+    <!-- Options Page Content Change text inside <div class="opt">-->
+    
+    <div class="contact-container u-max-full-width u-full-width">
+        <div class="container opt-ctn">
+            <h3 class="contact-heading">What are your EQ Office Options?</h3><br/>
+            <div class="opt">
+                <h4>Resident<br/></h4>
+                Personalized, private offices with our complete service package, including complimentary use of meeting and boardroom space.
+                <br/><br/><br/>
+                <b><i>Private</i></b><br/>
+                From $1000/month<br/>
+            </div>
+            <div class="opt">
+                <h4>Occasional<br/></h4>
+                Private offices, meeting rooms, and boardroom space available when you need, at competitive hourly and daily rates.
+                <br/><br/>
+                <b><i>Meeting Room</i></b><br/>
+                $40/hour<br/>
+                <b><i>Boardroom</i></b><br/>
+                $60/hour<br/>
+                <b><i>Private Office</i></b><br/>
+                $40/hour | $160/day
+            </div>
+            <div class="opt">
+                <h4>Virtual<br/></h4>
+                Enjoy a prestigious address, mail handling, and experienced staff to greet clients. Private offices, meeting rooms, and boardroom on demand.
+                <br/><br/><br/>
+                <b>From $120/month</b>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Options Page Content -->
+
+    <!-- Footer - Common to all pages-->
+    
+    <footer class="contact-footer">
+        <div class="main-footer container">
+            <div class="">
+                <img src="/static/image/logo.png" class="u-pull-left" alt="logo">
+            </div>
+            <div class="enquiry u-pull-right">
+                <div>
+                    <!-- Change contact number inside href="tel:" as well as inside <a> > tag -->
+                    <a href="tel:(416) 583-1427">(416) 583-1427</a>
+                </div>
+                <div>
+                    <!-- Change email inside href="mailto:" as well as inside <a> tag -->
+                    <a href="mailto:'info@eqoffices.com'">             
+                        info@eqoffices.com
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <!-- Change Copyright text here -->
+            Copyright reserved @ 2017 EQ Offices Inc.<br/>
+            <a href="/privacy-policy/">Privacy Policy</a>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function detectmob() { 
+         if( navigator.userAgent.match(/Android/i)
+         || navigator.userAgent.match(/webOS/i)
+         || navigator.userAgent.match(/iPhone/i)
+         || navigator.userAgent.match(/iPad/i)
+         || navigator.userAgent.match(/iPod/i)
+         || navigator.userAgent.match(/BlackBerry/i)
+         || navigator.userAgent.match(/Windows Phone/i)
+         ){
+            return true;
+          }
+         else {
+            return false;
+          }
+        }
+        if(detectmob()){
+            document.getElementsByTagName('footer')[0].style.bottom = "-3em";
+        }
+    </script>
+    <!-- End Footer - Common to all pages -->
+</body>
+
+</html>

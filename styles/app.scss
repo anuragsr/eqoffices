@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'urkelian';
+    src: url('/static/fonts/Armata/armata/Armata-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'ptf';
+    src: url('/static/fonts/PTF55F.ttf')
+}
+
+* {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: black;
+    font-family: ptf;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    padding-top: 14rem;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    @extend .bg-grey;
+}
+
+.bg-grey {
+    background: rgba(128, 128, 128, 0.4);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.top-bar {
+    width: 100%;
+    @extend .sticky;
+    height: 12rem;
+    z-index: 100;
+    .nav-bar {
+        background: black;
+        .nav-menu {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            .nav-item {
+                padding: .7rem 1rem;
+                a {
+                    color: white;
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    text-decoration: none;
+                    &:hover {
+                        color: #676767;
+                    }
+                }
+            }
+        }
+    }
+    .info-bar {
+        background: white;
+        .info-bar-content {
+            padding: 1rem 1rem;
+            img {
+                width: 18rem;
+            }
+            .enquiry {
+                justify-content: flex-end;
+                display: flex;
+                flex-direction: column;
+                font-size: 2rem;
+                padding-top: 1rem;
+                text-align: right;
+                a {
+                    text-align: right;
+                    color: #676767;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.contact-container {
+    .contact-heading {
+        text-align: center;
+        margin-top: .5rem;
+    }
+    .map-area {
+        background: rgba(223, 223, 223, 0.7);
+        padding: 2rem 1rem;
+        >.container {
+            padding: 2rem 1rem;
+        }
+        .address-text {
+            line-height: 2rem;
+            p {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+        .map-image {
+            height: 50%;
+        }
+    }
+    .contact-form {
+        padding: 2rem 1rem;
+        .heading {
+            @extend .text-center;
+            font-size: 1.5rem;
+            margin-bottom: .75rem;
+        }
+    }
+}
+
+.home-container {
+    .slider-wrapper {
+        overflow: hidden;
+        .slider-main {
+            position: relative;
+            .image-wrapper {
+                height: 60rem;
+                display: flex;
+                position: relative;
+                >img {
+                    display: inline-block;
+                    transition: 1200ms ease-in;
+                    opacity: 1;
+                    position: absolute;
+                    left: 0%;
+                    top: -20%;
+                    &.hide {
+                        opacity: 0;
+                    }
+                }
+            }
+            .indicators {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                .bullets {
+                    width: 40%;
+                    margin: 1rem auto;
+                    text-align: center;
+                    >li {
+                        display: inline-block;
+                        border: solid 1px black;
+                        height: 12px;
+                        width: 12px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        margin: 1px;
+                        transition: 1200ms ease-in;
+                        background: transparent;
+                        &.fill {
+                            border: solid 1px black;
+                            background: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sub-heading {
+        padding: 2rem 1rem;
+        .content {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+    .map-container {
+        height: 400px;
+        width: 100%;
+    }
+    .why-eq {
+        padding: 2rem 1rem;
+        .why-column {
+            display: flex;
+            flex-direction: column;
+            .title {
+                text-align: center;
+                font-weight: 600;
+                font-size: 2rem;
+            }
+            .content {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .whats-included {
+        padding: 2rem 1rem;
+        font-size: 1.5rem;
+        ul {
+            list-style: none;
+            li {
+                padding: .3rem 0;
+                i {
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding: 2rem 1rem;
+    bottom: 0;
+    left: 0;
+    background: black;
+    height: 7rem;
+    .main-footer {
+        height: 70%;
+        img {
+            width: 8rem;
+            filter: invert(100%);
+        }
+        .enquiry {
+            a {
+                font-size: 1.4rem;
+                text-decoration: none;
+                color: #676767;
+            }
+        }
+    }
+    .copyright {
+        text-align: center;
+        font-size: 1rem;
+        color: #676767;
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+// utility classes
+.text-center {
+    text-align: center;
+}
+
+.medium-text {
+    font-size: 1.5rem;
+}
+
+.flex {
+    display: flex;
+    &.row {
+        flex-direction: row;
+    }
+    &.col {
+        flex-direction: column;
+    }
+    &.justify-end {
+        justify-content: flex-end;
+    }
+}

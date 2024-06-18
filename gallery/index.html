@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <title>EQ Offices | Gallery</title>
+    <link rel='shortcut icon' type='image/x-icon' href='/static/fav.ico' />
+    <link rel="shortcut icon" type="image/png" href="/static/fav.png"/>
+    <link rel="stylesheet" href="/styles/skeleton.css">
+    <link rel="stylesheet" href="/styles/app.min.css?v=1.1">
+    <link rel="stylesheet" href="/styles/font-awesome/css/font-awesome.min.css">
+    <base href="/">
+</head>
+
+<body style="padding-bottom: 15rem;">
+    
+    <!-- Start of Header Section - Common to all pages -->
+    
+    <div class="top-bar">
+        <nav class="nav-bar">
+            <div class="nav-menu container">
+                <!-- Change links on top of page here  -->            
+                <div class="nav-item"><a href="">Home</a></div>
+                <div class="nav-item"><a href="/options/">Options</a></div>
+                <div class="nav-item"><a href="/gallery/">Gallery</a></div>
+                <div class="nav-item"><a href="/contact/">Contact</a></div>
+            </div>
+        </nav>
+        <header class="info-bar">
+            <div class="container info-bar-content">
+                <!-- Change logo image here -->
+                <img src="/static/image/logo.png" class="u-pull-left" alt="logo">
+                <div class="enquiry u-pull-right">
+                    <div>
+                        <!-- Change contact number inside href="tel:" as well as inside <a> > tag -->
+                        <a href="tel:(416) 583-1427">(416) 583-1427</a>
+                    </div>
+                    <div>
+                        <!-- Change email inside href="mailto:" as well as inside <a> tag -->
+                        <a href="mailto:'info@eqoffices.com'">                       
+                            info@eqoffices.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- End of Header Section - Common to all pages -->
+
+    <!-- Options Page Content Change text inside <div class="opt">-->
+    
+        <!-- Start of Home Page Info Box -->
+        <div class="sub-heading container">
+
+            <!-- Home Page Main Title -->
+            <h4 class="text-center" style="font-weight: bold;">
+            Our Offices
+            </h4>
+            <!-- End Home Page Main Title -->
+            
+            <!-- Home Page Main Content -->
+            <p class="content">
+                <img src="/static/image/pro1.jpg">
+            </p>
+            <p class="content">
+                <img src="/static/image/pro2.jpg">
+            </p>
+            <p class="content">
+                <img src="/static/image/pro3.jpg">
+            </p>
+            <p class="content">
+                <img src="/static/image/pro3b.jpg">
+            </p>
+            <p class="content">
+                <img src="/static/image/pro4.jpg">
+            </p>
+            <p class="content">
+                <img src="/static/image/pro5.jpg">
+            </p>
+            <p class="content">
+                <img src="/static/image/pro6.jpg">
+            </p>
+            <p class="content">
+                <img src="/static/image/pro7.jpg">
+            </p>
+            <!-- End Home Page Main Content -->
+
+        </div>
+    
+    <!-- End Options Page Content -->
+
+    <!-- Footer - Common to all pages-->
+    
+    <footer class="contact-footer">
+        <div class="main-footer container">
+            <div class="">
+                <img src="/static/image/logo.png" class="u-pull-left" alt="logo">
+            </div>
+            <div class="enquiry u-pull-right">
+                <div>
+                    <!-- Change contact number inside href="tel:" as well as inside <a> > tag -->
+                    <a href="tel:(416) 583-1427">(416) 583-1427</a>
+                </div>
+                <div>
+                    <!-- Change email inside href="mailto:" as well as inside <a> tag -->
+                    <a href="mailto:'info@eqoffices.com'">             
+                        info@eqoffices.com
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <!-- Change Copyright text here -->
+            Copyright reserved @ 2017 EQ Offices Inc.<br/>
+            <a href="/privacy-policy/">Privacy Policy</a>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function detectmob() { 
+         if( navigator.userAgent.match(/Android/i)
+         || navigator.userAgent.match(/webOS/i)
+         || navigator.userAgent.match(/iPhone/i)
+         || navigator.userAgent.match(/iPad/i)
+         || navigator.userAgent.match(/iPod/i)
+         || navigator.userAgent.match(/BlackBerry/i)
+         || navigator.userAgent.match(/Windows Phone/i)
+         ){
+            return true;
+          }
+         else {
+            return false;
+          }
+        }
+        if(detectmob()){
+            document.getElementsByTagName('footer')[0].style.bottom = "-3em";
+        }
+    </script>
+    <!-- End Footer - Common to all pages -->
+</body>
+
+</html>

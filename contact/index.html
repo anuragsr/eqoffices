@@ -1,0 +1,257 @@
+<html>
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <title>EQ Offices | Contact</title>
+    <link rel='shortcut icon' type='image/x-icon' href='/static/fav.ico' />
+    <link rel="shortcut icon" type="image/png" href="/static/fav.png"/>
+    <link rel="stylesheet" href="/styles/skeleton.css">
+    <link rel="stylesheet" href="/styles/app.min.css?v=1.1">
+    <link rel="stylesheet" href="/styles/font-awesome/css/font-awesome.min.css">
+    <base href="/">
+</head>
+
+<body>
+    <!-- Start of Header Section - Common to all pages -->
+    
+    <div class="top-bar">
+        <nav class="nav-bar">
+            <div class="nav-menu container">
+                <!-- Change links on top of page here  -->            
+                <div class="nav-item"><a href="">Home</a></div>
+                <div class="nav-item"><a href="/options/">Options</a></div>
+                <div class="nav-item"><a href="/gallery/">Gallery</a></div>    
+                <div class="nav-item"><a href="/contact/">Contact</a></div>
+            </div>
+        </nav>
+        <header class="info-bar">
+            <div class="container info-bar-content">
+                <!-- Change logo image here -->
+                <img src="/static/image/logo.png" class="u-pull-left" alt="logo">
+                <div class="enquiry u-pull-right">
+                    <div>
+                        <!-- Change contact number inside href="tel:" as well as inside <a> > tag -->
+                        <a href="tel:(416) 583-1427">(416) 583-1427</a>
+                    </div>
+                    <div>
+                        <!-- Change email inside href="mailto:" as well as inside <a> tag -->
+                        <a href="mailto:'info@eqoffices.com'">                       
+                            info@eqoffices.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- End of Header Section - Common to all pages -->
+    
+    <!-- Start of Contact Page content -->
+    <div class="contact-container u-max-full-width u-full-width">
+        <div class="container">
+            <!--  Contact Page title -->
+            <h3 class="contact-heading">Contact</h3>
+            <h6 class="contact-heading">
+                <!--  Contact Page heading -->
+                Please do not hesitate to contact us if you would like to arrange a building tour or require further information about our property or services.
+            </h6>
+        </div>
+        <!-- Map area -->
+        <div class="map-area">
+            <div class="container row">
+                <div class="address-text three columns">
+                    <p>
+                        EQ Offices Inc.
+                    </p>
+                    <p>
+                        350 Bay Street, Suite 700
+                    </p>
+                    <p>
+                        Toronto, ON, Canada
+                    </p>
+                    <p>
+                        M5H 2S6
+                    </p>
+                </div>
+                <div class="map-image nine columns" id="map">
+                </div>
+            </div>
+        </div>
+        <!-- End Map area -->
+
+        <!-- Contact Form -->
+        <form class="contact-form container" id="form" name="contact" method="post" onsubmit="formSubmit();event.preventDefault()">
+            <a name="form"></a>
+            <div class="heading">
+                Please fill in contact details
+            </div>
+            <div class="required">
+                * required
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <input class="u-full-width" type="text" name="firstname" placeholder="First Name *" id="firstName" required>
+                </div>
+                <div class="six columns">
+                    <input class="u-full-width" type="text" name="lastname" placeholder="Last Name *" id="lastName" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <input class="u-full-width" type="email" name="email" placeholder="Email ID *" id="email" required>
+                </div>
+                <div class="six columns">
+                    <input class="u-full-width" type="text" name="phone" placeholder="Phone Number *" id="phone" required>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <input class="u-full-width" type="text" name="company" placeholder="Company" id="company">
+                </div>
+            </div>
+            <div class="row flex row">
+                <div class="six columns">
+                    <textarea class="u-full-width" name="message" placeholder="Leave us a message..." id="exampleMessage"></textarea>
+                </div>
+                <div class="six columns flex col justify-end">
+                    <label class="schedule-a-tour">
+                        <input type="checkbox" name="wantToSchedule">
+                        <span class="label-body medium-text" >Would you like to schedule a tour? </span>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns text-center">
+                    <input class="button" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+        <!-- End Contact Form -->
+    </div>
+    <!-- End Contact Page Content -->
+
+    <!-- Footer - Common to all pages-->
+
+    <footer>
+        <div class="main-footer container">
+            <div class="">
+                <img src="/static/image/logo.png" class="u-pull-left" alt="logo">
+            </div>
+            <div class="enquiry u-pull-right">
+                <div>
+                    <!-- Change contact number inside href="tel:" as well as inside <a> > tag -->
+                    <a href="tel:(416) 583-1427">(416) 583-1427</a>
+                </div>
+                <div>
+                    <!-- Change email inside href="mailto:" as well as inside <a> tag -->
+                    <a href="mailto:'info@eqoffices.com'">             
+                        info@eqoffices.com
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <!-- Change Copyright text here -->
+            Copyright reserved @ 2017 EQ Offices Inc.<br/>
+            <a href="/privacy-policy/">Privacy Policy</a>
+        </div>
+    </footer>
+    
+    <!-- End Footer - Common to all pages -->
+
+    <!-- JavaScript required for the page -->    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHikpS7uGEG-4K-MkBZcZAaqWo0pPUDsM&extension=.js"></script>
+    <script src="https://cdn.mapkit.io/v1/infobox.js"></script>
+    <script src="script/map.js">
+    </script>
+    <script type="text/javascript">
+        function formSubmit() {
+            var url = "contact/sendmail.php";
+            var form = document.querySelector('form');
+            var data = serialize(form);
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", url, true);
+
+            //Send the proper header information along with the request
+            xhr.setRequestHeader("Content-type", "application/json");
+
+            console.log(data);
+            xhr.send(JSON.stringify(data));
+            xhr.onreadystatechange = function (e) {
+                if (xhr.readyState == 4 && xhr.status === 200) {
+                    alert(JSON.parse(xhr.responseText).message)
+                }
+            }
+
+        };
+
+        function serialize(form) {
+            if (!form || form.nodeName !== "FORM") {
+                return;
+            }
+            var i, j,
+                obj = {};
+            for (i = form.elements.length - 1; i >= 0; i = i - 1) {
+                if (form.elements[i].name === "") {
+                    continue;
+                }
+                switch (form.elements[i].nodeName) {
+                    case 'INPUT':
+                        switch (form.elements[i].type) {
+                            case 'text':
+                            case 'hidden':
+                            case 'password':
+                            case 'button':
+                            case 'reset':
+                            case 'submit':
+                            case 'email':
+                                obj[form.elements[i].name] = encodeURIComponent(form.elements[i].value);
+                                break;
+                            case 'checkbox':
+                            case 'radio':
+                                if (form.elements[i].checked) {
+                                    obj[form.elements[i].name] = encodeURIComponent(form.elements[i].value);
+                                }
+                                break;
+                            case 'file':
+                                break;
+                        }
+                        break;
+                    case 'TEXTAREA':
+                        obj[form.elements[i].name] = encodeURIComponent(form.elements[i].value);
+                        break;
+                    case 'SELECT':
+                        switch (form.elements[i].type) {
+                            case 'select-one':
+                                obj[form.elements[i].name] = encodeURIComponent(form.elements[i].value);
+                                break;
+                            case 'select-multiple':
+                                for (j = form.elements[i].options.length - 1; j >= 0; j = j - 1) {
+                                    if (form.elements[i].options[j].selected) {
+                                        obj[form.elements[i].name] = encodeURIComponent(form.elements[i].options[j].value);
+                                    }
+                                }
+                                break;
+                        }
+                        break;
+                    case 'BUTTON':
+                        switch (form.elements[i].type) {
+                            case 'reset':
+                            case 'submit':
+                            case 'button':
+                                obj[form.elements[i].name] = encodeURIComponent(form.elements[i].value);
+                                break;
+                        }
+                        break;
+                }
+            }
+            return obj;
+        }
+    </script>
+
+</body>
+
+</html>
